@@ -1,12 +1,4 @@
 
-const header = document.getElementById('header');
-
-header.addEventListener('touchstart', e => {
-    console.log('Toxunus', e.touches.length);
-    // body-de istenilen yere toxunusu sayir
-    console.log('Target', e.targetTouches.length);
-    // yalniz header deyisendeki toxunusu sayir
-})
 
 document.addEventListener('touchstart', e => {
     [...e.changedTouches].forEach(touch => {
@@ -33,4 +25,5 @@ document.addEventListener('touchend', e => {
         barmaq.remove();
     })
 });
+
 
